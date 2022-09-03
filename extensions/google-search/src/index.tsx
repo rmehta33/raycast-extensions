@@ -38,6 +38,12 @@ export default function Command() {
                   />
 
                   <CopyToClipboardAction title="Copy URL to Clipboard" content={item.url} />
+
+                  <CopyToClipboardAction 
+                    title="Copy Result to Clipboard" 
+                    content={item.query} 
+                    shortcut={{ modifiers: ["cmd", "shift"], key: "c" }}
+                  />
                 </ActionPanel.Section>
 
                 <ActionPanel.Section title="History">
